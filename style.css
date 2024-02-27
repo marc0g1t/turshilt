@@ -1,0 +1,52 @@
+.container {
+  height: 235px;
+  width: 170.8px;
+  border-style: solid;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container:hover > .img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.text {
+  z-index: 1;
+  color: white;
+  /* width: fit-content; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  width: 90%;
+}
+.i {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.bottom {
+  position: relative;
+}
+.hide {
+  border-style: solid;
+  font-size: 13px;
+  height: 32px;
+  overflow: scroll;
+  transition: height 1s;
+}
+.text:hover .hide {
+  /* height: fit-content; */
+  height: 70px;
+  /* transition: 1s; */
+}
